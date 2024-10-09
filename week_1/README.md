@@ -3,6 +3,12 @@
 * [CSS](./CSS.md)
 * [Intro to Ruby](./intro_to_ruby.md)
 
+# Video Resources
+* [Introduction to Git](https://youtu.be/VtQnFaybZ7g?si=YWhEbQS6jxu_TUbs)
+* [Introduction to Web Development](https://youtu.be/BQ-j0mXhNL0?si=QD5g0tosG62chTjN)
+* [API, REST and HTTP Verbs](https://youtu.be/shSa9-Y7HIQ?si=rIAK386PjPdbJnMI)
+* [Introduction to Ruby](https://youtu.be/GQoQoJmmAuM?si=k7a_IZuEm0_7yIeE)
+
 If you not familiar with programming concepts like `variable`, `function` and `class`,
 you can refer to the following resources
 - [TryRuby](https://try.ruby-lang.org/)
