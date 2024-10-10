@@ -1,4 +1,7 @@
 # IRIS Ruby on Rails Bootcamp 2024
+IRIS Ruby on Rails Bootcamp will be a month-long training program for the students to learn programming skills through a hands-on experience, mentored by developers from IRIS Web team.
+ 
+You will be shared detailed tutorials where we teach development the IRIS way, with weekly assignments to apply your learning.
 
 ## [Essential Git](/essential_git.md)
 
