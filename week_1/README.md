@@ -1,4 +1,5 @@
 # Week 1
+# Topics Covered
 * [HTML](./HTML.md)
 * [CSS](./CSS.md)
 * [Intro to Ruby](./intro_to_ruby.md)
@@ -9,18 +10,39 @@
 * [API, REST and HTTP Verbs](https://youtu.be/shSa9-Y7HIQ?si=rIAK386PjPdbJnMI)
 * [Introduction to Ruby](https://youtu.be/GQoQoJmmAuM?si=k7a_IZuEm0_7yIeE)
 
-If you not familiar with programming concepts like `variable`, `function` and `class`,
+If you are not familiar with programming concepts like `variable`, `function` and `class`,
 you can refer to the following resources
 - [TryRuby](https://try.ruby-lang.org/)
 - [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/).
 
-# Assignments
+# Assignment 
 
-* Fork this repository and use the `week1_<your_name>` branch for your work.
+Create a Ruby application that fetches the latest news from the [NewsAPI](https://newsapi.org/) and displays the results on an HTML page in a well-structured and visually appealing format.
+
+*The API call must be made in Ruby without using an NewAPI client library.*
+
+### Steps to follow
+
+1. Create an account at [NewsAPI](https://newsapi.org/) and get the API key from your profile.  
+2. Go through the [documentation](https://newsapi.org/docs)
+3. Write a Ruby program to fetch 
+    - The top 10 headlines of the day
+    - Include a search input to search for articles with the given search query.
+4. Display the data in an HTML file and use CSS to make it visually pleasing.
+
+
 * Once you have completed the assignment, submit a Pull Request with your work to the branch `week1_assignment` **(not `main`)**.
 * Status of your grading will be indicated using GitHub tags on your _PR_.
 
 ---
+
+### Submission Instructions
+
+* Fork this repository and use the `week1_<your_name>` branch for your work.
+* Create all files in the [`week_1`](./) folder itself.
+* Once you have completed the assignment, submit a Pull Request with your work to the branch `week1_assignment` **(not `main`)**.
+* Add any screenshots (if needed) to the _PR_ description.
+* Status of your grading will be indicated using GitHub tags on your _PR_.
 
 ## Installing a code editor
 
@@ -59,26 +81,5 @@ For example, to debug `prime_numbers.rb` do the following:
   interpreter).
 
 - [How to use IRB to Explore Ruby](https://www.digitalocean.com/community/tutorials/how-to-use-irb-to-explore-ruby)
-
-## Assignment 1 - 
-
-Create a Ruby application that fetches the latest news from the [NewsAPI](https://newsapi.org/) and displays the results on an HTML page in a well-structured and visually appealing format.
-
-*The API call must be made in Ruby without using an NewAPI client library.*
-
-### Steps to follow
-
-1. Create an account at [NewsAPI](https://newsapi.org/) and get the API key from your profile.  
-2. Go through the [documentation](https://newsapi.org/docs)
-3. Write a Ruby program to fetch 
-    - The top 10 headlines of the day
-    - Include a search input to search for articles with the given search query.
-4. Display the data in an HTML file and use CSS to make it visually pleasing.
-
-### Submission Instructions
-
-* Follow the instructions given [here](#assignments)
-* Create all files in the [`week_1`](./) folder itself.
-* Add any screenshots (if needed) to the _PR_ description.
 
 ---
