@@ -24,14 +24,14 @@ back-end is enabled. Steps to install WSL2 -
 
 **Clone the repo and open it in vscode**
 ```bash
-git clone https://github.com/IRIS-NITK/IRIS-RoR-Bootcamp-2022
-cd IRIS-RoR-Bootcamp-2022
+git clone https://github.com/iris-nitk-pvt/web-bootcamp-2024.git
+cd web-bootcamp-2024
 code .
 ```
 ## 3. Open the folder in dev container
 * Open the repo in VS code and press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>p</kbd> to bring up the Command Palette,
 and search for command **Dev Containers: Reopen in Container** and execute it. This uses the dev 
-container [config file](https://github.com/IRIS-NITK/IRIS-RoR-Bootcamp-2022/blob/install-ror/.devcontainer/devcontainer.json) 
+container [config file](https://github.com/iris-nitk-pvt/web-bootcamp-2024/blob/main/.devcontainer/devcontainer.json) 
 inside `.devcontainer` folder to create a new dev container.
 
 <img width="960" alt="dev_cont" src="https://user-images.githubusercontent.com/66632353/209476750-c8bec9ca-0ea5-4f3c-a548-a55eef8da866.png">
@@ -42,7 +42,7 @@ inside `.devcontainer` folder to create a new dev container.
 -------------------------------------------------
 
 The folder will be reopened inside a Debian container.
-The container has `rvm`, `node` and `yarn` preinstalled so you can get started off working with rails.
+The container has `rvm`, `node`, `ruby` and `yarn` preinstalled so you can get started off working with rails.
 
 ![image](https://user-images.githubusercontent.com/66632353/208944762-9279ad6f-7408-480c-9c10-fd0296137f8a.png)
 
