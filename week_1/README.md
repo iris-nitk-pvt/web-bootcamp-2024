@@ -38,8 +38,8 @@ Create a Ruby application that fetches the latest news from the [NewsAPI](https:
 
 ### Submission Instructions
 
-* Fork this repository and use the `week1_<your_name>` branch for your work.
-* Create all files in the [`week_1`](./) folder itself.
+* Fork and Clone this repository.
+* Create a folder called `submission` in the [`week_1`](./) folder and add all your files in this submission folder. So all your work for this week should be there in the submission folder of week_1.
 * Once you have completed the assignment, submit a Pull Request with your work to the branch `week1_assignment` **(not `main`)**.
 * Add any screenshots (if needed) to the _PR_ description.
 * Status of your grading will be indicated using GitHub tags on your _PR_.
