@@ -21,7 +21,12 @@ yarn --version  # >= 1.22.19
 
 > RVM allows you to easily install, manage and work with multiple ruby
 > environments.
-- Install Ruby (3.0.5)
+- Install Ruby
+
+    https://rvm.io/rubies/installing - Here you can determine which Ruby version is compatible with your system.
+
+    Once you've identified the version, use the following commands to install Ruby (replace 3.0.5 with the version you're installing).
+
 ```bash
 rvm install ruby-3.0.5
 rvm --default use 3.0.5
@@ -44,3 +49,5 @@ rvm use 3.0.5@week_2
 gem install bundler --version 2.2.33
 gem install rails --version 7.0.4
 ```
+
+  If you encounter any issues with the specified versions of Bundler or Rails, try downloading the latest versions.
