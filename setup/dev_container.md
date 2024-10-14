@@ -34,7 +34,8 @@ and search for command **Dev Containers: Reopen in Container** and execute it. T
 container [config file](https://github.com/iris-nitk-pvt/web-bootcamp-2024/blob/main/.devcontainer/devcontainer.json) 
 inside `.devcontainer` folder to create a new dev container.
 
-<img width="960" alt="dev_cont" src="https://user-images.githubusercontent.com/66632353/209476750-c8bec9ca-0ea5-4f3c-a548-a55eef8da866.png">
+![image](https://github.com/user-attachments/assets/0f993632-8250-411e-b753-04095167ab3e)
+
 
 * The VS Code window will reload and start building the dev container. A progress notification provides status updates.
 * After the build completes, VS Code will automatically connect to the container.
@@ -44,7 +45,7 @@ inside `.devcontainer` folder to create a new dev container.
 The folder will be reopened inside a Debian container.
 The container has `rvm`, `node`, `ruby` and `yarn` preinstalled so you can get started off working with rails.
 
-![image](https://user-images.githubusercontent.com/66632353/208944762-9279ad6f-7408-480c-9c10-fd0296137f8a.png)
+![image](https://github.com/user-attachments/assets/37a9d2f3-ea09-4588-8e2c-18af8e1ba3b4)
 
 --------------------------------------------------
 
