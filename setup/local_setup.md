@@ -50,33 +50,9 @@ You can also install the [ubuntu apt package](https://github.com/rvm/ubuntu_rvm)
 
 > RVM allows you to easily install, manage and work with multiple ruby
 > environments.
-- Install Ruby (3.0.5)
-```bash
-rvm install ruby-3.0.5
-rvm --default use 3.0.5
-```
 
-- Create and use a [gemset](https://codecabulary.launchacademy.com/learn-ruby/gemsets) `week_<n>` where `n` is the session number.
+**Once you have installed RVM follow [this](./README.md#rvm) to install Ruby, Rails, Bundler**
 
-```bash
-rvm gemset create week_2
-rvm use 3.0.5@week_2
-```
-
-> A `gemset` is an isolated ruby setup. For example, you can isolate two
-> projects using Rails 5 and Rails 6 from each other using a gemset.
-> NOTE: Always switch to the appropriate gemset when working on a
-> project. You can use a [project rvmrc](https://rvm.io/workflow/rvmrc)
-> to automate this process.
-- Install Bundler (2.2.33) and Rails (7.0.4)
-```bash
-gem install bundler --version 2.2.33
-gem install rails --version 7.0.4
-```
-
-> While you can use different version of Ruby, Bundler and Rails - we
-> recommend using the provided versions as all exercies are created and
-> tested with these particular versions.
 - Check if the above steps worked correctly.
 ```bash
 rvm --version
