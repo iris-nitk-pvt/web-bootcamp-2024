@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>
+NEWS
+</title>
+
+<script >
+
+
+document.addEventListener("DOMContentLoaded" , async () => {
+  try { const headlinesResponse = await fetch("./data.json")  ; 
+
+       console.log("headlines fetched ") ;
+
+        const headlines_data = await headlinesResponse.json()  ;
+
+        const headlines  =  headlines_data.articles.slice(0,10)  ;
+
+        const headlines_container  =  document.getElementById("headlines") ;
+
+        headlines.forEach(( headline ) => {
+
+        const div = document.createElement('div') ;
+
+
+
+        div.innerHTML =
+        `<h2> <a href="${ headline.url}" style = " color : wheat "> ${      headline.title} </a>  </h2> <hr>  `
+
+        headlines_container.appendChild(div) ;
+        })
+
+        const searched_content = await fetch("./search.json") ; 
+        console.log("searched content is fetched") ; 
+        const searched_content_data = await  searched_content.json() ;
+        const searched_articles = searched_content_data.articles ;
+
+        const totalResults = searched_content_data.totalResults ;
+
+
+        const searched_container = document.getElementById('searched')  ;
+
+        const h2 = document.createElement('h2') ;
+
+        h2.style.width = "100%" ;
+
+        h2.textContent = ` ${ totalResults}  results found  ` ;
+
+        searched_container.appendChild(h2) ;
+
+        searched_container.style.display ='flex' ;
+        searched_container.style.flexWrap  = 'wrap' ;
+        searched_container.style.justifyContent = 'space-evenly ' ;
+
+
+
+
+        searched_articles.forEach((article) => {
+
+
+        const div = document.createElement('div') ;
+
+        div.style.border ="1px solid white "
+
+        div.style.background = " black "
+
+        div.style.width = "30%" ;
+
+        div.style.margin = "5px" ;
+
+        div.style.borderRadius  =  "1%" ;
+
+        div.style.padding  = "1%"  ;
+
+        div.style.transition  = '0.1s ease' ;
+
+        div.addEventListener('mouseenter'  , () => {
+
+        div.style.transform = 'scale(1.02)'   })
+
+        div.addEventListener('mouseleave' ,() =>  {
+
+        div.style.transform = 'scale(1)'
+        })
+
+
+
+        div.innerHTML = `
+        <h2 style =  "border : 1px solid black ;" >
+        <a href="${article.url}" style ="color : white"  > ${ article.title} </a>
+        </h2>
+
+       <div style ="display : flex  ">
+      <img src="${article.urlToImage}" alt ="image" style="width : 250px   ; height : 150px " />
+      <p  style="    color : white  ; font-size : 25px ;   text-align : left  ; position : relative ; left : 10px  ; bottom : 25px  ;     " >  ${article.description }
+       <a href="${article.url}"  style = "color: white" >  Read more </a>
+      </p> </div>
+
+                           <h3> Source : ${ article.source.name} </h3>
+
+                           `
+        searched_container.appendChild(div) ;
+        } )
+  }
+  catch(error) {
+  console.log(error)  ;
+               }
+  })
+</script>
+</head>
+<body  style ="background-color : #1b1c1a ; color :white ;  ">
+<h1> TOP HEADLINES </h1>
+<div id="headlines" style="background-color : black  " >  </div>
+<h1> SEARCHED CONTENT </h1> 
+<div id="searched"></div>
+</body>
+</html>
