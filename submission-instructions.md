@@ -22,7 +22,7 @@
 
     A private repository named `ror-bootcamp-2024-<your-github-username>` will be created under the organization `iris-nitk-pvt`. Only you and the admins will have access to this repository.
 
-8. Now, you can **clone the repository** as usual.
+8. Now, you can **clone the repository** as usual. In this repo you will be able to see the tasks of each week and other instructions as well. 
 
 ---
 
